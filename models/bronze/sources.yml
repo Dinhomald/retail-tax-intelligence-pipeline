@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: bronze
+    project: crm-estudo-bq
+    dataset: bronze
+    tables:
+      - name: raw_cnpj
+        description: "Dados brutos de CNPJ ingeridos via BrasilAPI"
