@@ -6,7 +6,7 @@ LPAD(CAST(cnpj AS STRING), 14, '0') as cnpj,
 COALESCE(NULLIF(nome_fantasia, ''), razao_social) as nome_fantasia,
 data_inicio_atividade as dt_inicio_atividade,
 case
-    when situacao_cadastral = 1 then true
+    when situacao_cadastral = 2 then true
     else false
 end as fl_ativa,
 razao_social,
